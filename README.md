@@ -64,3 +64,33 @@
 3. **Conclusions and Recommendations**
 
 	State your major findings from different sections. State your recommendation to the company that they can put into place to solve their problem.
+
+4. **Model Selection (How to Compare Classification Models)**
+
+	In order to evaluate and compare machine learning models with different features, a known
+	approach is to create a baseline model first. This can be done by training one model (e.g.,
+	decision tree) on the training set using the entire feature set (all attributes) and evaluating its
+	performance using the selected metric (such as accuracy, true positive rate, false positive rate,
+	etc.) on the validation set (or test set). Optimization of the model parameters or selection of
+	features could be done by changing one variable (e.g., one parameter or one feature) at a time
+	and re-training the model on the same training set. Finally, one needs to compare the
+	performance of different models built using different features on the same validation set (or
+	test set). This would give an indication whether that variable (feature or parameter) has
+	increased or decreased the performance.
+
+	- Using 3-ways data splitting (Here, you will have to divide a dataset yourself or find a library/function in Python):
+		- Training (e.g., 60%): for training the model
+		- Validation (e.g., 20%): for evaluating and comparing the performance after varying
+parameters, features, etc. In addition, this is used for selecting the “best” model.
+		- Testing (e.g., 20%): only used at the end to evaluate the final performance and report
+the results of the selected models (best performing models from the above step)
+		- This video describes this approach: [https://www.youtube.com/watch?v=4wGquWG-vGw
+](https://www.youtube.com/watch?v=4wGquWG-vGw
+)
+
+	- Using 10-fold cross validation (10-FCV) on the entire dataset:
+		-  Create the base model by train and evaluate its (average) performance using 10-FCV.
+		-  Change model parameters or features, retrain and re-evaluate the (average) model
+performance using the 10-FCV strategy.
+		- Report the results of best performing models (using the best parameters and features
+select from the above step).
