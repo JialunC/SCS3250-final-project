@@ -3,7 +3,7 @@
 ## Project Description
 
 ### About the Dataset
-- Description
+- **Description**
 
 	This dataset refers to the problem of telemarketing for a bank. The dataset is collected from
 	a Portuguese bank and the bank wants to have an effective telemarketing strategy to sell
@@ -13,7 +13,7 @@
 	data scientists will help this bank in determining such customers and devising an effective
 	telemarketing strategy by applying data analytics method on the given dataset.
 
-- Attributes
+- **Attributes**
 
 	| Attribute |                                        Description                                        |                          Type                         |
 	|:---------:|:-----------------------------------------------------------------------------------------:|:-----------------------------------------------------:|
@@ -34,3 +34,33 @@
 	|  Previous | Number of contacts performed before this campaign and for this client                     |                        numeric                        |
 	|  Poutcome | Outcome of the previous marketing campaign                                                |                      qualitative                      |
 	|     Y     | Class attribute showing whether the client has subscribed a term deposit or not           |                   binary: "yes","no"                  |
+	
+### Project Requirements
+
+1. **Data Preparation and Pre-prediction Analysis**
+
+	The first and foremost step of data mining process is to understand the data and identify the research question(s). Here are some suggestions to explore and understand datasets:
+	- Look at the attribute type; e.g., categorical, ordinal or quantitative
+	- Find max, min, mean and standard deviation of attributes.
+	- Determine any outlier values (records) for each of the attributes or attributes under
+	- Consideration (min, max, std. dev, scatter plots, box plots or others can be used).
+	- Analyze the distribution of numeric attributes (normal or other).
+	- Plot histograms for attributes of concern and analyze whether they have any influence on the class
+	- Try to answer these questions by different visualization techniques:
+		- Which attributes seem to be most linked to the class attribute?
+		- Which attributes seem to be most linked to the class attribute?
+		- Which attributes do you think can be eliminated or included in the analysis?
+		- Determine whether the dataset has an imbalanced class distribution (same proportion of records of different types or not).
+
+2. **Predictive Modeling (Classification)**
+
+	After an overall understanding about the dataset, you can use classification algorithms, Decision Tree and Naïve Bayes. Also, choose a classification algorithm of your own choice, explain it a at a high level and compare your results.
+	- You will predict the class attribute by using each classification algorithm.
+	- Determine the right strategy for dataset split: simple training or testing, 10-fold cross validation, 3-fold cross validation, etc.
+	- Repeat the same process for Decision Trees, Naïve Bayes and the third classification algorithm of your choice.
+	- Determine your performance measures (accuracy, recall, etc.).
+	- Identify which algorithm performs well and in which settings.
+
+3. **Conclusions and Recommendations**
+
+	State your major findings from different sections. State your recommendation to the company that they can put into place to solve their problem.
