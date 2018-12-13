@@ -16,6 +16,7 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="./custom.css" id="theme">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -39,7 +40,7 @@
 		<div class="reveal">
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section data-background="#4d7e65">
+				<section>
 					<h2>SCS3250 Final Project</h2>
 					<h3>Bank Telemarketing Dataset</h3>
 					<p>
@@ -96,6 +97,58 @@
 									<th>0.543622</th>
 								</tr>
 								<tr>
+									<td>GradientBoosting - cv</td>
+									<th>0.889656</th>
+									<th>0.548336</th>
+									<th>0.203415</th>
+								</tr>
+								<tr>
+									<td>GradientBoosting - test</td>
+									<th>0.880663</th>
+									<th>0.727446</th>
+									<th>0.594200</th>
+								</tr>
+								<tr>
+									<td>DecisionTree - cv</td>
+									<th>0.849024</th>
+									<th>0.327360</th>
+									<th>0.333720</th>
+								</tr>
+								<tr>
+									<td>DecisionTree - test</td>
+									<th>0.838674</th>
+									<th>0.619187</th>
+									<th>0.608144</th>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h2>Data Modelling</h2>
+						<p>SMOTE</p>
+						<table>
+							<thead>
+								<tr>
+									<th>Classifier - Dataset</th>
+									<th>Accuracy</th>
+									<th>Precision</th>
+									<th>Recall</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>GaussianNB - cv</td>
+									<th>0.841809</th>
+									<th>0.332868</th>
+									<th>0.396829</th>
+								</tr>
+								<tr>
+									<td>GaussianNB - test</td>
+									<th>0.847514</th>
+									<th>0.659615</th>
+									<th>0.673890</th>
+								</tr>
+								<tr>
 									<td>BernoulliNB - cv</td>
 									<th>0.879972</th>
 									<th>0.324123</th>
@@ -107,25 +160,101 @@
 									<th>0.731912</th>
 									<th>0.543622</th>
 								</tr>
+								<tr>
+									<td>GradientBoosting - cv</td>
+									<th>0.889656</th>
+									<th>0.548336</th>
+									<th>0.203415</th>
+								</tr>
+								<tr>
+									<td>GradientBoosting - test</td>
+									<th>0.880663</th>
+									<th>0.727446</th>
+									<th>0.594200</th>
+								</tr>
+								<tr>
+									<td>DecisionTree - cv</td>
+									<th>0.849024</th>
+									<th>0.327360</th>
+									<th>0.333720</th>
+								</tr>
+								<tr>
+									<td>DecisionTree - test</td>
+									<th>0.838674</th>
+									<th>0.619187</th>
+									<th>0.608144</th>
+								</tr>
 							</tbody>
 						</table>
 					</section>
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
+						<h2>Data Modelling</h2>
+						<p>ADASYN</p>
+						<table>
+							<thead>
+								<tr>
+									<th>Classifier - Dataset</th>
+									<th>Accuracy</th>
+									<th>Precision</th>
+									<th>Recall</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>GaussianNB - cv</td>
+									<th>0.841809</th>
+									<th>0.332868</th>
+									<th>0.396829</th>
+								</tr>
+								<tr>
+									<td>GaussianNB - test</td>
+									<th>0.847514</th>
+									<th>0.659615</th>
+									<th>0.673890</th>
+								</tr>
+								<tr>
+									<td>BernoulliNB - cv</td>
+									<th>0.879972</th>
+									<th>0.324123</th>
+									<th>0.066098</th>
+								</tr>
+								<tr>
+									<td>BernoulliNB - test</td>
+									<th>0.878453</th>
+									<th>0.731912</th>
+									<th>0.543622</th>
+								</tr>
+								<tr>
+									<td>GradientBoosting - cv</td>
+									<th>0.889656</th>
+									<th>0.548336</th>
+									<th>0.203415</th>
+								</tr>
+								<tr>
+									<td>GradientBoosting - test</td>
+									<th>0.880663</th>
+									<th>0.727446</th>
+									<th>0.594200</th>
+								</tr>
+								<tr>
+									<td>DecisionTree - cv</td>
+									<th>0.849024</th>
+									<th>0.327360</th>
+									<th>0.333720</th>
+								</tr>
+								<tr>
+									<td>DecisionTree - test</td>
+									<th>0.838674</th>
+									<th>0.619187</th>
+									<th>0.608144</th>
+								</tr>
+							</tbody>
+						</table>
 					</section>
 				</section>
 
 				<section>
-					<h2>Slides</h2>
+					<h2>Conclusion</h2>
 					<p>
 						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="https://slides.com" target="_blank">https://slides.com</a>.
 					</p>
@@ -133,14 +262,15 @@
 
 				<section>
 					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
+						<h2>Conclusion</h2>
+						<ul>	
+							<li>Not a coder? Not a problem. There's a fully-featured visual edit Not a coder? Not a problem. There's a fully-featured visual edit</li>	
+							<li class="fragment"> Or here</li>	
+							<li class="fragment">Or here</li>		
+						</ul>
+						<!-- <p class="fragment">... to step through ...</p>
 						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
+						<p class="fragment">... to step through ...</p> -->
 					</section>
 					<section>
 						<h2>Fragment Styles</h2>
