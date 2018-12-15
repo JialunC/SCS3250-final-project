@@ -80,24 +80,24 @@
 						<ul>	
 							<li class="fragment small-text">Started by looking through all the categorical variables
 								<ul>
-									<li class="fragment small-text">Default, contact, poutcome all suffered from either incompleteness or significantly unbalanced</li>
+									<li class="fragment small-text-table">Default, contact, poutcome all suffered from either incompleteness or significantly unbalanced</li>
 								</ul>
 							</li>	
 							<li class="fragment small-text">Next look at categorical/numeric variables
 								<ul>
-									<li class="fragment small-text">Balance and pdays contained the most extreme outliers. This problem was addressed by converting these variables into categorical variables at a later step.</li>
+									<li class="fragment small-text-table">Balance and pdays contained the most extreme outliers. This problem was addressed by converting these variables into categorical variables at a later step.</li>
 								</ul>
 							</li>
 							<li class="fragment small-text">Correlation with success
 								<ul>
-									<li class="fragment small-text">Duration 0.40, age_group 60+ 0.125, housing -0.104, loan-0.07</li>
-									<li class="fragment small-text">These results are in-line with expectation.</li>
+									<li class="fragment small-text-table">Duration 0.40, age_group 60+ 0.125, housing -0.104, loan-0.07</li>
+									<li class="fragment small-text-table">These results are in-line with expectation.</li>
 								</ul>
 							</li>
 							<li class="fragment small-text">Feature/variable independence
 								<ul>
-									<li class="fragment small-text">Contact, campaign, and previous are all very closely related with one another so in order to avoid the problem of multicollinearity we create a new variable called ‘was contacted’ {1:yes 0:no}.</li>
-									<li class="fragment small-text">As it turns out this new variable has a low degree of correlation to success so in the end it is dropped from the model, in favour of duration</li>
+									<li class="fragment small-text-table">Contact, campaign, and previous are all very closely related with one another so in order to avoid the problem of multicollinearity we create a new variable called ‘was contacted’ {1:yes 0:no}.</li>
+									<li class="fragment small-text-table">As it turns out this new variable has a low degree of correlation to success so in the end it is dropped from the model, in favour of duration</li>
 								</ul>
 							</li>						
 						</ul>
@@ -105,13 +105,13 @@
 				</section>
 				<section>
 					<section id="fragments">
-						<h2>Example of unbalanced and unknown data</h2>
+						<h3>Example of unbalanced and unknown data</h3>
 						<ul>	
 							<li class="small-text">On the left is the variable Default and is an example of an unbalanced variable/feature.</li>	
 							<li class="small-text">On the right is an example of unknowns in the data set.
 								<ul>
-									<li class="small-text">Poutcome (outcome of the previous marketing campaign)  has some valuable information in it, but has a very large degree of useless data</li>
-									<li class="small-text">Poutcomes adds no value to sample.</li>
+									<li class="small-text-table">Poutcome (outcome of the previous marketing campaign)  has some valuable information in it, but has a very large degree of useless data</li>
+									<li class="small-text-table">Poutcomes adds no value to sample.</li>
 								</ul>
 							</li>	
 						</ul>
@@ -218,7 +218,7 @@
 							<li class="small-text-table">gridsearchCV help us tune some of the hyperparameters of our models.</li>
 							<li class="small-text-table">Next was determining the best option for resampling our training dataset.  We tested 2 options: SMOTE (synthetic minority over-sampling technique) and ADASYN (Adaptive synthetic sampling approach)</li>
 							<li class="small-text-table">We found that the results for SMOTE where slightly better.</li>
-							<li class="small-text-table">Finally, looking at the results we can see that the Gradient Boosting Classifier preformed best on the re-sampled dataset.  Gradient out-preforms across all scores except recall.</li>
+							<li class="small-text-table">Finally, looking at the results we can see that the Gradient Boosting Classifier preformed best on the re-sampled dataset.</li>
 						</ul>
 						<table>
 							<thead>
@@ -243,7 +243,7 @@
 									<th>0.590641</th>
 								</tr>
 								<tr>
-									<td>DecisionTree - depth:3 - SMOTE - cv</td>
+									<td>DecisionTree-depth:3-SMOTE - cv</td>
 									<th>0.788186</th>
 									<th>0.815550</th>
 									<th>0.745017</th>
@@ -298,7 +298,7 @@
 				</section>
 				<section>
 					<section id="fragments">
-						<h2>Conclusion and recommendations</h2>
+						<h3>Conclusion and recommendations</h3>
 						<ul>	
 							<li>Based on the results of our analysis the following recommendation can be made to the bank in order to increase the success rate of their next campaign:
 								<ul>
