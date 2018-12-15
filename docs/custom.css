@@ -1,0 +1,12 @@
+.reveal table th, .reveal table td {
+    font-size: 25px;
+    padding: 0.2em 2.5em 0.2em 0.5em;
+}
+
+.reveal .small-text {
+    font-size: 0.8em
+}
+
+.reveal .small-text-table {
+    font-size: 0.6em
+}
