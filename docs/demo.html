@@ -47,17 +47,62 @@
 						<small>By <a href="https://github.com/JialunC">Jialun Chen</a>, <a href="https://github.com/rdryden">Robert Dryden</a> and <a href="https://github.com/wxeshetu">Wondwessen Shibeshi</a></small>
 					</p>
 				</section>
-
 				<section>
-					<h2>Data Exploration</h2>
-					<h4>
-						What is the problem?
-					</h4>
-					<p>
-						Determining an effective telemarketing strategy by applying data analytics method on the given dataset.
-					</p>
+					<section id="fragments">
+						<h2>Data and Data Exploration</h2>
+						<ul>	
+							<li>The dataset consists of 16 variables from a direct marketing campaign of a Portuguese banking institution and 1 label/outcome (success of campaign)</li>	
+							<li class="fragment"> Campaign goal was to convert clients into term-deposit purchases with the bank.</li>	
+						</ul>
+					</section>
 				</section>
-
+				<section>
+					<section id="fragments">
+						<h2>Data and Data Exploration</h2>
+						<ul>	
+							<li class="fragment">The variables include:
+								<ul>
+									<li class="fragment small-text">Client data (age, job, balance, loans, etc.)</li>
+									<li class="fragment small-text">Campaign details (contact method, date, duration, etc.)</li>
+									<li class="fragment small-text">Other attributes (previous campaign information)</li>
+									<li class="fragment small-text">Output variable (whether campaign was successful or not)</li>
+								</ul>
+							</li>	
+							<li class="fragment small-text">No null values were included.</li>
+							<li class="fragment small-text">Some of the features/variables suffered from unknowns or incomplete data.</li>	
+							<li class="fragment small-text">Mix of categorical and continuous(numeric) variables, with varying degrees of skewness and outliers.</li>	
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section id="fragments">
+						<h3>Data transformation and initial analysis</h3>
+						<ul>	
+							<li class="fragment small-text">Started by looking through all the categorical variables
+								<ul>
+									<li class="fragment small-text">Default, contact, poutcome all suffered from either incompleteness or significantly unbalanced</li>
+								</ul>
+							</li>	
+							<li class="fragment small-text">Next look at categorical/numeric variables
+								<ul>
+									<li class="fragment small-text">Balance and pdays contained the most extreme outliers. This problem was addressed by converting these variables into categorical variables at a later step.</li>
+								</ul>
+							</li>
+							<li class="fragment small-text">Correlation with success
+								<ul>
+									<li class="fragment small-text">Duration 0.40, age_group 60+ 0.125, housing -0.104, loan-0.07</li>
+									<li class="fragment small-text">These results are in-line with expectation.</li>
+								</ul>
+							</li>
+							<li class="fragment small-text">Feature/variable independence
+								<ul>
+									<li class="fragment small-text">Contact, campaign, and previous are all very closely related with one another so in order to avoid the problem of multicollinearity we create a new variable called ‘was contacted’ {1:yes 0:no}.</li>
+									<li class="fragment small-text">As it turns out this new variable has a low degree of correlation to success so in the end it is dropped from the model, in favour of duration</li>
+								</ul>
+							</li>						
+						</ul>
+					</section>
+				</section>
 				<section>
 					<section>
 						<h2>Data Modelling</h2>
@@ -268,22 +313,6 @@
 							<li class="fragment"> Or here</li>	
 							<li class="fragment">Or here</li>		
 						</ul>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p>
-							<span style="display: inline-block;" class="fragment fade-right">fade-right, </span>
-							<span style="display: inline-block;" class="fragment fade-up">up, </span>
-							<span style="display: inline-block;" class="fragment fade-down">down, </span>
-							<span style="display: inline-block;" class="fragment fade-left">left</span>
-						</p>
-						<p class="fragment fade-in-then-out">fade-in-then-out</p>
-						<p class="fragment fade-in-then-semi-out">fade-in-then-semi-out</p>
-						<p>Highlight <span class="fragment highlight-red">red</span> <span class="fragment highlight-blue">blue</span> <span class="fragment highlight-green">green</span></p>
 					</section>
 				</section>
 			</div>
