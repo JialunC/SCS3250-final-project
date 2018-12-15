@@ -143,8 +143,12 @@
 				</section>
 				<section>
 					<section>
-						<h2>Data Modelling</h2>
-						<p>Without Over Sampling</p>
+						<h3>Data Modelling</h3>
+						<ul>
+							<li class="small-text-table">The first round results seemed pretty good when just looking at Accuracy scores. However, when you look at Precision and Recall scores then models preform at lot worse.</li>
+							<li class="small-text-table">These problems seem to be compounded when we look at the results for our cross-validation.</li>
+							<li class="small-text-table">These results indicate that we should try fine tuning our models and dataset.</li>
+						</ul>
 						<table>
 							<thead>
 								<tr>
@@ -168,16 +172,28 @@
 									<th>0.673890</th>
 								</tr>
 								<tr>
-									<td>BernoulliNB - cv</td>
-									<th>0.879972</th>
-									<th>0.324123</th>
-									<th>0.066098</th>
+									<td>DecisionTree - cv</td>
+									<th>0.849024</th>
+									<th>0.327360</th>
+									<th>0.333720</th>
 								</tr>
 								<tr>
-									<td>BernoulliNB - test</td>
-									<th>0.878453</th>
-									<th>0.731912</th>
-									<th>0.543622</th>
+									<td>DecisionTree - test</td>
+									<th>0.838674</th>
+									<th>0.619187</th>
+									<th>0.608144</th>
+								</tr>
+								<tr>
+									<td>RandomForest - cv</td>
+									<th>0.872242</th>
+									<th>0.380495</th>
+									<th>0.208537</th>
+								</tr>
+								<tr>
+									<td>RandomForest - test</td>
+									<th>0.864088</th>
+									<th>0.650237</th>
+									<th>0.577143</th>
 								</tr>
 								<tr>
 									<td>GradientBoosting - cv</td>
@@ -190,152 +206,82 @@
 									<th>0.880663</th>
 									<th>0.727446</th>
 									<th>0.594200</th>
-								</tr>
-								<tr>
-									<td>DecisionTree - cv</td>
-									<th>0.849024</th>
-									<th>0.327360</th>
-									<th>0.333720</th>
-								</tr>
-								<tr>
-									<td>DecisionTree - test</td>
-									<th>0.838674</th>
-									<th>0.619187</th>
-									<th>0.608144</th>
-								</tr>
-							</tbody>
-						</table>
-					</section>
-					<section>
-						<h2>Data Modelling</h2>
-						<p>SMOTE</p>
-						<table>
-							<thead>
-								<tr>
-									<th>Classifier - Dataset</th>
-									<th>Accuracy</th>
-									<th>Precision</th>
-									<th>Recall</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>GaussianNB - cv</td>
-									<th>0.841809</th>
-									<th>0.332868</th>
-									<th>0.396829</th>
-								</tr>
-								<tr>
-									<td>GaussianNB - test</td>
-									<th>0.847514</th>
-									<th>0.659615</th>
-									<th>0.673890</th>
-								</tr>
-								<tr>
-									<td>BernoulliNB - cv</td>
-									<th>0.879972</th>
-									<th>0.324123</th>
-									<th>0.066098</th>
-								</tr>
-								<tr>
-									<td>BernoulliNB - test</td>
-									<th>0.878453</th>
-									<th>0.731912</th>
-									<th>0.543622</th>
-								</tr>
-								<tr>
-									<td>GradientBoosting - cv</td>
-									<th>0.889656</th>
-									<th>0.548336</th>
-									<th>0.203415</th>
-								</tr>
-								<tr>
-									<td>GradientBoosting - test</td>
-									<th>0.880663</th>
-									<th>0.727446</th>
-									<th>0.594200</th>
-								</tr>
-								<tr>
-									<td>DecisionTree - cv</td>
-									<th>0.849024</th>
-									<th>0.327360</th>
-									<th>0.333720</th>
-								</tr>
-								<tr>
-									<td>DecisionTree - test</td>
-									<th>0.838674</th>
-									<th>0.619187</th>
-									<th>0.608144</th>
-								</tr>
-							</tbody>
-						</table>
-					</section>
-					<section>
-						<h2>Data Modelling</h2>
-						<p>ADASYN</p>
-						<table>
-							<thead>
-								<tr>
-									<th>Classifier - Dataset</th>
-									<th>Accuracy</th>
-									<th>Precision</th>
-									<th>Recall</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>GaussianNB - cv</td>
-									<th>0.841809</th>
-									<th>0.332868</th>
-									<th>0.396829</th>
-								</tr>
-								<tr>
-									<td>GaussianNB - test</td>
-									<th>0.847514</th>
-									<th>0.659615</th>
-									<th>0.673890</th>
-								</tr>
-								<tr>
-									<td>BernoulliNB - cv</td>
-									<th>0.879972</th>
-									<th>0.324123</th>
-									<th>0.066098</th>
-								</tr>
-								<tr>
-									<td>BernoulliNB - test</td>
-									<th>0.878453</th>
-									<th>0.731912</th>
-									<th>0.543622</th>
-								</tr>
-								<tr>
-									<td>GradientBoosting - cv</td>
-									<th>0.889656</th>
-									<th>0.548336</th>
-									<th>0.203415</th>
-								</tr>
-								<tr>
-									<td>GradientBoosting - test</td>
-									<th>0.880663</th>
-									<th>0.727446</th>
-									<th>0.594200</th>
-								</tr>
-								<tr>
-									<td>DecisionTree - cv</td>
-									<th>0.849024</th>
-									<th>0.327360</th>
-									<th>0.333720</th>
-								</tr>
-								<tr>
-									<td>DecisionTree - test</td>
-									<th>0.838674</th>
-									<th>0.619187</th>
-									<th>0.608144</th>
 								</tr>
 							</tbody>
 						</table>
 					</section>
 				</section>
-
+				<section>
+					<section>
+						<h3>Data Modelling</h3>
+						<ul>
+							<li class="small-text-table">gridsearchCV help us tune some of the hyperparameters of our models.</li>
+							<li class="small-text-table">Next was determining the best option for resampling our training dataset.  We tested 2 options: SMOTE (synthetic minority over-sampling technique) and ADASYN (Adaptive synthetic sampling approach)</li>
+							<li class="small-text-table">We found that the results for SMOTE where slightly better.</li>
+							<li class="small-text-table">Finally, looking at the results we can see that the Gradient Boosting Classifier preformed best on the re-sampled dataset.  Gradient out-preforms across all scores except recall.</li>
+						</ul>
+						<table>
+							<thead>
+								<tr>
+									<th>Classifier - Dataset</th>
+									<th>Accuracy</th>
+									<th>Precision</th>
+									<th>Recall</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>GaussianNB - SMOTE - cv</td>
+									<th>0.699509</th>
+									<th>0.664985</th>
+									<th>0.803937</th>
+								</tr>
+								<tr>
+									<td>GaussianNB - SMOTE - test</td>
+									<th>0.602210</th>
+									<th>0.540752</th>
+									<th>0.590641</th>
+								</tr>
+								<tr>
+									<td>DecisionTree - depth:3 - SMOTE - cv</td>
+									<th>0.788186</th>
+									<th>0.815550</th>
+									<th>0.745017</th>
+								</tr>
+								<tr>
+									<td>DecisionTree-depth:3-SMOTE-test</td>
+									<th>0.801105</th>
+									<th>0.638280</th>
+									<th>0.723245</th>
+								</tr>
+								<tr>
+									<td>RandomForest-depth:3-SMOTE-cv</td>
+									<th>0.840557</th>
+									<th>0.826555</th>
+									<th>0.861298</th>
+								</tr>
+								<tr>
+									<td>RF-depth:3-SMOTE-test</td>
+									<th>0.797790</th>
+									<th>0.638557</th>
+									<th>0.728938</th>
+								</tr>
+								<tr>
+									<td>GradientBoosting - SMOTE - cv</td>
+									<th>0.907590</th>
+									<th>0.904843</th>
+									<th>0.910257</th>
+								</tr>
+								<tr>
+									<td>GradientBoosting - SMOTE - test</td>
+									<th>0.840884</th>
+									<th>0.650142</th>
+									<th>0.670103</th>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</section>
 				<section>
 					<h2>Conclusion</h2>
 					<p>
